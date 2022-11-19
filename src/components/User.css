@@ -1,0 +1,170 @@
+*{
+    color: #8b949e;
+    /* border: 1px solid red; */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 300px;
+  flex-wrap: nowrap;
+  margin: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-right: 0;
+  text-align: center;
+  font-family: arial;
+}
+
+.card img{
+    width:296px ;
+    height:296px ;
+    border-radius: 50%;
+}
+
+.card2 {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  flex-basis: 60%;
+  text-align: left;
+  font-family: arial;
+  line-height: 50px;
+
+}
+
+.card2 h2 {
+  margin-top: 10px;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.card h1 {
+  font-size: 50px;
+  background-color: #ddd;
+}
+
+li {
+  font-size: 25px;
+  list-style-position: inside;
+}
+
+.info {
+  margin: 10px;
+  padding: 10px;
+}
+
+.card2 a {
+  text-decoration: none;
+  color: #58a6ff;
+  font-weight: 600;;
+  font-size:30px;
+  display: inline-flex;
+}
+.card2 a:hover {
+  text-decoration: underline;
+  color: #58a6ff;
+  font-weight: 600;;
+  font-size: 30px;
+}
+
+.card2 span p{
+    display: inline;
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 2em;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 7px 10px;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+.card2 .desc {
+    width: 511px;
+    line-height: 27px;
+    font-size: 18px;
+}
+.card2 .repo-details{
+    border-top: 1px solid ;
+    border-color: rgb(33 38 45);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.card2 .topics {
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 22px;
+    margin-right: 10px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 22px;
+    border: 1px solid var(--color-topic-tag-border, transparent);
+     color: rgb(88 166 255);
+    background-color: hsl(215deg 98% 61% / 15%);
+}
+.card2 .topics:hover {
+    background-color: rgb(31 111 235);
+    color: rgb(255 255 255);
+    cursor: pointer;
+}
+
+.description {
+   /* display: grid;
+  grid-template-columns: 90px 120px;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;  */
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+  padding-top: 10px;
+}
+
+.card .fullname {
+    font-size: 24px;
+    text-align: left;
+    color: #ddd ;
+    font-weight: 700px;
+}
+
+.description a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #ddd;
+}
+.follows .bold {
+    font-weight: 400;
+    color: #ddd;
+}
+.card .follows {
+    text-align: left;
+    padding-top: 10px;;
+    padding-bottom: 10px;;
+}
+.card .username {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 300;
+    line-height: 14px;
+}
+.card .bio {
+    padding-top: 12px;
+    text-align: left;
+    color: #ddd;
+}
+
+.card .description p {
+    display: inline;
+    text-align: left;
+    height: 8px;
+}
