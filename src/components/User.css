@@ -16,11 +16,12 @@
   margin-right: 0;
   text-align: center;
   font-family: arial;
+  width: 30%;
 }
 
 .card img{
-    width:296px ;
-    height:296px ;
+    width:100% ;
+    aspect-ratio: 1;
     border-radius: 50%;
 }
 

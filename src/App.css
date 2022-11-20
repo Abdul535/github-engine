@@ -143,10 +143,10 @@ input[type='text']:focus {
       height: 29px;
   }
   .card {
-    justify-content: center;
+    width: 100% !important;
   }
   .card2 .desc {
-      width: 312px;
+      width: 312px !important;
       line-height: 48px;
       font-size: 18px;
   }
