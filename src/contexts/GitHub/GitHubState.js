@@ -5,6 +5,7 @@ import axios from "axios";
 import { SET_LOADING, SET_USERS, SHOW_ALERT, SET_USER, SET_REPOS } from "../types";
 
 function GitHubState(props) {
+    const token = process.env.REACT_APP_GITHUB_TOKEN;
     const initialState = {
         users: [],
         user: {},
@@ -23,7 +24,7 @@ function GitHubState(props) {
             setLoading();
             const res = await axios.get("https://api.github.com/users", {
                 headers: {
-                    "Authorization": `Bearer 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`
+                    "Authorization": token
                 }
             });
             dispatch({
@@ -47,7 +48,7 @@ function GitHubState(props) {
             setLoading();
             const res = await axios.get(`https://api.github.com/search/users?q=${username}`, {
                 headers: {
-                    "Authorization": `Bearer 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`
+                    "Authorization": token
                 }
             });
             console.log(res.data.items)
@@ -80,7 +81,7 @@ function GitHubState(props) {
             setLoading();
             const res = await axios.get(`https://api.github.com/users/${uname}`, {
                 headers: {
-                    "Authorization": `Bearer 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`
+                    "Authorization": token
                 }
             });
             console.log(res.data);
@@ -95,7 +96,7 @@ function GitHubState(props) {
             setLoading();
             const res = await axios.get(`https://api.github.com/users/${uname}/repos?sort=desc`, {
                 headers: {
-                    "Authorization": `Bearer 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`
+                    "Authorization": token
                 }
             });
             console.log(res.data);

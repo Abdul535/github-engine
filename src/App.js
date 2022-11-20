@@ -2,7 +2,6 @@ import React, { useEffect, useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
@@ -25,7 +24,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/user/:uname" element={<User />} />
       </Routes>
-      <Footer />
     </>
   );
 }

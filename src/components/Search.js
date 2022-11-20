@@ -19,22 +19,20 @@ function Search() {
     }
     return (
         <div className="header">
-            <h1>Github Search Engine</h1>
+            <h2 style={{paddingBottom:"15px",fontWeight:"600px",color:"white"}}>Github Search Engine</h2>
             <Alert alert={githubContext.alert}/>
             <form onSubmit={onSubmitHandler}>
                 <input
                     type="text"
                     name="username"
                     placeholder="Enter Your Username Here ... "
-                    autoComplete="off"
+                    autocomplete="off"
                     onChange={onChangeHandler}
                     value={username}
                 />
-                <br />
                 <button className="submit">Search</button>
-            </form>
-            <br />
             <button className="clear" onClick={githubContext.clearUsers}>Clear</button>
+            </form>
         </div>
     )
 }
