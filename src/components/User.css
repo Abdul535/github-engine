@@ -16,7 +16,7 @@
   margin-right: 0;
   text-align: center;
   font-family: arial;
-  width: 30%;
+  width: 25%;
 }
 
 .card img{
@@ -167,5 +167,5 @@ li {
 .card .description p {
     display: inline;
     text-align: left;
-    height: 8px;
+    height: 28px;
 }
